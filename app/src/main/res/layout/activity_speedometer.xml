@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpeedometerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutTopBar"
+            android:layout_alignParentTop="true">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbarTop"
+                    android:background="@drawable/white_border_bottom">
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayoutMain"
+            android:layout_below="@+id/relLayoutTopBar"
+            android:layout_above="@+id/relLayoutBotBar">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/the_speed_limit_is"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/limit_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="null"
+                    android:layout_marginBottom="30dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000.0 Km/h"
+                    android:textColor="#000"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sw_metric"
+                    android:checked="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Metric Units "/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutBotBar"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavBar"
+                android:background="@drawable/white_border_top"
+                app:menu="@menu/bottom_navigation_menu">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "95382164174",
+    "firebase_url": "https://firespeed-f5dfe.firebaseio.com",
+    "project_id": "firespeed-f5dfe",
+    "storage_bucket": "firespeed-f5dfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95382164174:android:e0872473bd41cba5a0769f",
+        "android_client_info": {
+          "package_name": "com.thanasis.firespeed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95382164174-dd1nih45ff5jcm0vrh06qv0l95qtjpdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thanasis.firespeed",
+            "certificate_hash": "a488cfb630e89d20f6733dbc7b6ee5b2e9b31abd"
+          }
+        },
+        {
+          "client_id": "95382164174-b9qlrn5rs1joqsd8gi48u9h4k53oocff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thanasis.firespeed",
+            "certificate_hash": "2945e115a507a3f593ba5cde2a10548f83517efc"
+          }
+        },
+        {
+          "client_id": "95382164174-da993s6b69qurdjagbjjmvg7q0kab7tc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjhFDsSqaXflBrVYJ7I3g98K90SzeFiW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95382164174-da993s6b69qurdjagbjjmvg7q0kab7tc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
